@@ -1,0 +1,26 @@
+// Fonts
+
+@import 'modules/bootstrap-icons';
+
+//custom classes
+@import "custom/variables";
+
+// Bootstrap
+@import 'modules/bootstrap';
+
+//animate.css
+:root {
+    --animate-duration: 1s;
+    --animate-delay: .5s;
+    --animate-repeat: 1;
+}
+
+@import '~animate.css/animate.css';
+
+//custom base classes
+@import "custom/base";
+
+// header
+@import "custom/header";
+
+@import "responsive";
