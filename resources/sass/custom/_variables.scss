@@ -1,69 +1,50 @@
 //Theme Colors
-// Blue
+$red: #C6282B;
+$dark: #120600;
+$light-dark: #EDEDED;
+$semi-light-dark:#EFEFEF;
+$gray: #222222;
 
-//$background-color:#F9FBFF;
-//$primary: $indigo;
-//$danger: $amethyst;
-//$body-color: $eerie-black;
-//$body-text: $eerie-black;
-//$dark: $eerie-black;
+$background-color:#ffffff;
+$primary: $red;
+$body-color: #6C757D;
+$body-text: $body-color;
 
-//$custom-colors: (
-    //"back-main":$background-color,
-    //"violet": $indigo,
-    //"dark": $dark,
-    //"navblack" : $nav-black,
-    //'semi-light': $battleship-grey,
-    //'purple': $amethyst,
-    //'purple-tr': $transparent-pink,
-    //'card':$cerulean-crayola
-//);
+$custom-colors: (
+        "red":$red,
+        "dark-bg": $dark,
+        "light-dark": $light-dark,
+        "semi-light": $semi-light-dark,
+        "gray": $gray,
+        "text-gray": $body-color
+
+);
+
+
+
+//fonts
+$small: 0.87rem;
+$font-size-sm:$small;
+$font-sizes: (
+        1: 2.5rem,
+        2: 2rem,
+        3: 1.75rem,
+        4: 1.5rem,
+        5: 1.25rem,
+        6: 1rem
+);
+
+$font-family-base: Iransans, 'sans-serif', 'Nunito';
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+$font-weight-base: $font-weight-normal;
 
 //border
-//$border-color: $eerie-black;
-//$border-color-translucent: $battleship-grey;
-//$border-radius-sm: 2px;
-//$border-radius-lg: 20px;
+$border-radius-sm: 10px;
+$border-radius-lg: 30px;
 
-
-//font
-
-
-//$small: 0.87rem;
-//$font-size-sm:$small;
-//$font-sizes: (
-//    1: 2.5rem,
-//    2: 2rem,
-//    3: 1.75rem,
-//    4: 1.5rem,
-//    5: 1.25rem,
-//    6: 1rem
-//);
-//
-//$font-weight-light: 400;
-//$font-weight-normal: 500;
-//$font-weight-bold: 600;
-//$font-weight-bolder: 700;
-//$font-weight-base: $font-weight-normal;
-
-//navbar
-//$navbar-nav-link-padding-x: 1.5rem;
-//$nav-link-font-weight: $font-weight-normal;
-//$nav-link-font-size: 18px;
-//
-//$dropdown-link-hover-bg: none;
-//$dropdown-link-active-bg: none;
-//$dropdown-link-color: $battleship-grey;
-//$dropdown-link-hover-color: $eerie-black;
-//$dropdown-link-active-color: $eerie-black;
-
-
-//link
-//$link-color: $eerie-black;
-//breadcrumb
-//$breadcrumb-font-size: 0.87rem;
-//$breadcrumb-item-padding-x: 26px;
-//$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  width='9' height='16'><path d='M8 15L1 8L8 1' stroke='#878787' stroke-linejoin='round' stroke-linecap='round' fill='none'/></svg>");
 //base class variables
 $transition-base: all .4s;
 $transition-fast: all .2s ease-in-out;
@@ -71,5 +52,5 @@ $transition: all .4s ease-in-out;
 $transition-slow: all .6s;
 
 //
-//$theme-colors: $custom-colors;
-//$colors: $custom-colors;
+$theme-colors: $custom-colors;
+$colors: $custom-colors;

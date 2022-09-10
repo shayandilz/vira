@@ -1,6 +1,6 @@
 require('./bootstrap');
 import 'swiper/css';
-import WOW from 'wow.js'
+import WOW from 'wow.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import $ from 'jquery';
@@ -25,13 +25,44 @@ document.addEventListener('DOMContentLoaded', function () {
     require('./gsap');
 
 
+    //toggle header on time
+    const toggleScrollClass = function () {
+        if (window.scrollY > 24) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+    }
+    toggleScrollClass();
+
+    //check scroll to take actions on it
+    window.addEventListener('scroll', function () {
+        toggleScrollClass();
+    });
 
     const swiper = new Swiper('.swiper1', {
         // Optional parameters
-        direction: 'vertical',
+        direction: 'horizontal',
         loop: true,
-        autoplay: {
-            delay: 2000,
+        // autoplay: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        disableOnInteraction: false,
+    });
+    const swiper2 = new Swiper('.swiper2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        roundLengths: false,
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
         },
         disableOnInteraction: false,
     });

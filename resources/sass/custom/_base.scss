@@ -6,7 +6,20 @@ p{
 }
 body {
     direction: ltr;
-    font-family: Iransans;
+}
+
+.vh-65{
+    height: 65vh;
+}
+
+.min-vh-50{
+    min-height: 50vh;
+}
+.link-hover:hover{
+    color: $red!important;
+}
+.translate-middle-y-custom{
+    transform: translateY(50%);
 }
 
 .text-justify{

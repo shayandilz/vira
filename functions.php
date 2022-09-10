@@ -106,6 +106,7 @@ add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
 //add_filter( 'acf/load_field/name=gravity_choices', 'acf_populate_gf_forms_ids' );
 
 
+
 // helper function to find a menu item in an array of items
 function wpd_get_menu_item( $field, $object_id, $items ) {
 	foreach ( $items as $item ) {
@@ -166,11 +167,13 @@ function the_breadcrumb() {
 		echo '">';
 		echo 'صفحه اصلی';
 		echo '</a></li>';
-		if (is_category() || is_single()) {
-			echo '<li class="breadcrumb-item">';
-			the_category(' </li><li class="breadcrumb-item"> ');
+        $terms = get_the_terms( $post->ID, 'product_categories' );
+        $termName = $terms[0]->name;
+		if (is_category() || is_single() || $termName) {
+			echo '<li class="breadcrumb-item"><a class="breadcrumb-item text-white text-decoration-none" href="' . $termName->slug . '">';
+            echo $termName;
 			if (is_single()) {
-				echo '</li><li class="breadcrumb-item">';
+				echo '</a></li><li class="breadcrumb-item">';
 				the_title();
 				echo '</li>';
 			}

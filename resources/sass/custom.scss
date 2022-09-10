@@ -10,9 +10,9 @@
 
 //animate.css
 :root {
-    --animate-duration: 1s;
-    --animate-delay: .5s;
-    --animate-repeat: 1;
+  --animate-duration: 1s;
+  --animate-delay: .5s;
+  --animate-repeat: 1;
 }
 
 @import '~animate.css/animate.css';
@@ -24,3 +24,41 @@
 @import "custom/header";
 
 @import "responsive";
+
+
+//box image hover
+.box1 {
+  background-color: #fff;
+  h4{
+    color: #30373E;
+  }
+  img {
+    opacity: 0;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
+    h4{
+      color: $white;
+    }
+
+  }
+}
+
+//frame for about
+.custom-frame:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 30px;
+  z-index: -1;
+  bottom: 30px;
+  border: 10px solid #EDEDED;
+}
+//custom frame why2
+.custom-frame2{
+  border: 10px solid rgba(255, 255, 255, 0.30);
+}

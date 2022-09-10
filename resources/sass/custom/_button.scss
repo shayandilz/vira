@@ -1,138 +1,79 @@
-////
-//// Base styles
-////
-//.btn {
-//    display: inline-block;
-//    font-family: $btn-font-family;
-//    font-weight: $btn-font-weight;
-//    line-height: $btn-line-height;
-//    color: $body-text;
-//    text-align: center;
-//    text-decoration: none;
-//    white-space: nowrap;
-//    vertical-align: middle;
-//    cursor: pointer;
-//    user-select: none;
-//    background-color: transparent;
-//    border: $btn-border-width solid transparent;
-//    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-//    @include transition($btn-transition);
-//    outline: 0 !important;
-//    min-height: 41px;
-//    max-height: 56px;
 //
-//    &:disabled,
-//    &.disabled,
-//    fieldset:disabled & {
-//        pointer-events: none;
-//        opacity: $btn-disabled-opacity;
-//        @include box-shadow(none);
-//    }
+// Base styles
 //
-//    // custom styles
-//    position: relative;
-//    z-index: 1;
-//    overflow: hidden;
-//
-//
-//    &.btn-circle {
-//        width: 56px;
-//        height: 56px;
-//        line-height: 38px;
-//        padding: $btn-padding-y;
-//        vertical-align: middle;
-//    }
-//}
-//
-////button mixins
-//@mixin button-variant($color) {
-//    background-color: $color;
-//    border-color: $color;
-//
-//    &:hover {
-//        box-shadow: none;
-//        background: transparent;
-//        color: $color !important;
-//
-//        svg path {
-//            stroke: $color;
-//        }
-//    }
-//}
-//
-//@mixin button-outline-variant($color) {
-//    border-color: $color;
-//    color: $color;
-//
-//    &:hover {
-//        background: $color;
-//        color: black !important;
-//
-//        svg path {
-//            stroke: black;
-//        }
-//    }
-//}
-//
-//
-//
-//.link-muted {
-//    color: $text-muted !important;
-//
-//    &:hover, &:focus {
-//        color: $eerie-black !important;
-//
-//        svg path {
-//            stroke: $text-muted;
-//        }
-//    }
-//}
-//
-////colored links
-//.link-dark {
-//    background-color: $body-text;
-//    color: #fff;
-//    &:hover, &:focus{
-//        color: $eerie-black;
-//        background-color: #fff;
-//        border: 1px solid $eerie-black;
-//        svg path{
-//            stroke: #fff;
-//        }
-//    }
-//    svg path {
-//        stroke: #fff;
-//    }
-//}
-//
-//.link-white {
-//    color: $eerie-black;
-//    &:hover, &:focus{
-//        color: #fff;
-//        background-color: $eerie-black;
-//        svg path{
-//            stroke: #fff;
-//        }
-//    }
-//    svg path{
-//        stroke: $eerie-black;
-//    }
-//}
-//
-//svg path {
-//    transition: all .4s;
-//}
-//
-//
-//.link-tag {
-//    border: $btn-border-width solid transparent;
-//    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-//    @include transition($btn-transition);
-//    color: $eerie-black !important;
-//    background: rgba(189, 157, 59, 0.07);
-//    font-size: 1.5 * $font-size-base;
-//
-//    &:hover, &:focus {
-//        border-color: $eerie-black;
-//    }
-//}
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    line-height: $btn-line-height;
+    color: $body-text;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: $btn-border-width solid $body-text;
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+    @include transition($btn-transition);
+    outline: 0 !important;
+    min-height: 41px;
+    max-height: 56px;
+
+    &:disabled,
+    &.disabled,
+    fieldset:disabled & {
+        pointer-events: none;
+        opacity: $btn-disabled-opacity;
+        @include box-shadow(none);
+    }
+
+    // custom styles
+    z-index: 2;
+}
+
+//button mixins
+@mixin button-variant($color) {
+    background-color: $color;
+    border-color: $color;
+
+    &:hover {
+        box-shadow: none;
+        background: $red;
+        color: #fff !important;
+    }
+}
+
+@mixin button-outline-variant($color) {
+    border-color: $color;
+    color: $color;
+
+    &:hover {
+        background: $color;
+        color: black !important;
+
+        svg path {
+            stroke: black;
+        }
+    }
+}
+
+.link-trans {
+    color: $body-text !important;
+
+    &:hover, &:focus {
+        color: $white !important;
+        background-color: $red!important;
+    }
+}
+.link-red {
+    color: $white !important;
+    background-color: $red!important;
+    border: 1px solid transparent;
+    &:hover, &:focus {
+        color: $red !important;
+        background-color: transparent!important;
+        border: 1px solid $red;
+    }
+}
