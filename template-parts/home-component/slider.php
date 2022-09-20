@@ -1,6 +1,6 @@
-<section class="vh-100 position-relative">
+<section class="hero-slider position-relative">
     <!-- Slider main container -->
-    <div class="swiper1 h-100">
+    <div class="swiper1 h-100 position-relative">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <?php
@@ -33,9 +33,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-    <div class="container position-absolute end-0 start-0 translate-middle-y z-top">
+    <div class="container hero-bottom-slider z-top">
         <div class="row justify-content-center align-items-center">
-            <div class="col-8 d-flex">
+            <div class="col-lg-8 col-12 d-flex">
                 <?php $box1 = get_field('first_box');
 
                 $button = $box1['button'] ?>

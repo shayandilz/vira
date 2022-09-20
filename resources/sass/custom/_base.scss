@@ -18,17 +18,15 @@ body {
 .link-hover:hover{
     color: $red!important;
 }
-.translate-middle-y-custom{
-    transform: translateY(50%);
-}
-
 .text-justify{
     text-align: justify;
 }
 .object-fit{
     object-fit: cover;
 }
-
+.translate-min{
+    transform: translateY(-35px);
+}
 .transparent{
     opacity: 0.3;
 }

@@ -1,12 +1,12 @@
 <section class="container-fluid">
-    <div class="row py-4 px-5">
-            <span class="text-red pb-2">
+    <div class="row py-4 px-lg-5 justify-content-center">
+            <span class="text-red pb-2 position-relative line-before">
                 <?php the_field('blog_title') ?>
             </span>
         <h4 class="text-dark-bg pb-4">
             <?php the_field('blog_small_title') ?>
         </h4>
-        <div class="col-8 row">
+        <div class="col-lg-8 col-12 row">
             <?php
             $args = array(
                 'post_type'           => 'post',

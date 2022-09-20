@@ -1,14 +1,14 @@
-<section class="d-flex align-items-center">
-    <div class="container-fluid px-5">
+<section class="d-flex align-items-center position-relative">
+    <div class="container-fluid px-lg-5">
         <div class="row align-items-center">
-            <div class="col-6 d-flex align-items-center justify-content-start">
+            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-start">
                 <?php $why_image = get_field('why_image'); ?>
                 <img class="img-fluid" src="<?= $why_image['url'] ?>" alt="<?= $why_image['alt'] ?>">
             </div>
-            <div class="col-6">
-                    <span class="text-red pb-2">
-                        <?php the_field('why_small_title') ?>
-                    </span>
+            <div class="col-lg-6 col-12">
+                <span class="text-red position-relative line-before">
+                    <?php the_field('why_small_title') ?>
+                </span>
                 <h4 class="text-dark-bg pb-4">
                     <?php the_field('why_title') ?>
                 </h4>
@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="bg-red p-5 rounded-1">
-                    <div class="swiper2 overflow-hidden">
+                    <div class="swiper2 overflow-hidden position-relative">
                         <div class="swiper-wrapper">
                             <?php
                             wp_reset_postdata();
@@ -44,4 +44,7 @@
             </div>
         </div>
     </div>
+<!--    <div class="position-absolute end-0 bottom-0">-->
+<!--        --><?php //get_template_part('template-parts/effect-svg/gear'); ?>
+<!--    </div>-->
 </section>

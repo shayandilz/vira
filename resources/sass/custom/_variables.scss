@@ -4,6 +4,9 @@ $dark: #120600;
 $light-dark: #EDEDED;
 $semi-light-dark:#EFEFEF;
 $gray: #222222;
+$light-gray: #f7f7f7;
+
+$nav-def: #6C757D;
 
 $background-color:#ffffff;
 $primary: $red;
@@ -16,8 +19,9 @@ $custom-colors: (
         "light-dark": $light-dark,
         "semi-light": $semi-light-dark,
         "gray": $gray,
-        "text-gray": $body-color
-
+        "text-gray": $body-color,
+        "light-gray": $light-gray,
+        "nav-def": $nav-def
 );
 
 

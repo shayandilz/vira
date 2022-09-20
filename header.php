@@ -14,7 +14,7 @@
 <body <?php body_class(); ?> >
 
 
-<section class="bg-dark-bg topbar p-3">
+<section class="bg-dark-bg topbar w-100 position-fixed lazy">
     <div class="container-fluid">
         <div class="row align-items-center justify-content-between">
             <div class="col-6 d-flex gap-2">
@@ -43,9 +43,9 @@
     </div>
 </section>
 
-<header id="main-header" class="w-100 position-fixed lazy border-bottom ">
+<header id="main-header" class="w-100 position-fixed lazy border-bottom">
     <div class="flex-nowrap bg-white position-relative">
-        <nav class="container navbar navbar-expand-xl rounded navbar-light px-2 lazy-slow justify-content-xl-between justify-content-xl-start animate__animated animate__fadeInDown animate__delay-1s py-4">
+        <nav class="container navbar navbar-expand-xl rounded navbar-light lazy-slow justify-content-xl-between justify-content-xl-start animate__animated animate__fadeInDown animate__delay-1s">
             <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

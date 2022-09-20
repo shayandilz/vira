@@ -1,8 +1,11 @@
-<section class="vh-100 d-flex align-items-center">
-    <div class="container-fluid px-5">
+<section class="min-vh-100 d-flex align-items-center position-relative">
+    <div class="position-absolute top-0 start-0 z-below">
+        <?php get_template_part('template-parts/effect-svg/vector1'); ?>
+    </div>
+    <div class="container-fluid py-5 py-lg-0 px-lg-5 z-top">
         <div class="row">
-            <div class="col-6">
-                    <span class="text-red pb-2">
+            <div class="col-lg-6 col-12">
+                    <span class="text-red line-before position-relative">
                         <?php the_field('about_small_title') ?>
                     </span>
                 <h4 class="text-dark-bg pb-4">
@@ -43,14 +46,21 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-6 d-flex align-items-center justify-content-end row">
-                <div class="col-7">
+            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-lg-end justify-content-center row mt-5 mt-lg-0 position-relative">
+                <div class="col-lg-7 col-12 position-relative">
                     <?php $about_image = get_field('about_image'); ?>
-                    <div class="ratio ratio-1x1 custom-frame" style="height: 450px;">
+                    <div class="ratio ratio-1x1 custom-frame z-top" style="height: 450px;">
                         <img class="object-fit" src="<?= $about_image['url'] ?>" alt="<?= $about_image['alt'] ?>">
                     </div>
+                    <div class="position-absolute z-below" style="bottom: -40px;right: -40px">
+                        <?php get_template_part('template-parts/effect-svg/dots'); ?>
+                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
+    <div class="position-absolute w-auto end-0 bottom-0 mt-3">
+        <?php get_template_part('template-parts/effect-svg/vector2'); ?>
     </div>
 </section>

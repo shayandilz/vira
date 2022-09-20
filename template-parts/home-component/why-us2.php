@@ -2,8 +2,8 @@
          style="background-image: url('<?php the_field('why_image2'); ?>'); background-repeat: no-repeat;background-size: cover">
     <div class="container">
         <div class="row">
-            <div class="col-4 bg-white d-flex flex-column py-5 px-5">
-                    <span class="text-red pb-3 pt-5">
+            <div class="col-lg-4 col-12 bg-white d-flex flex-column py-5 px-lg-5">
+                    <span class="text-red position-relative line-before">
                         <?php the_field('why_small_title2') ?>
                     </span>
                 <h4 class="text-dark-bg pb-5">
@@ -32,7 +32,7 @@
                     ?>
                 <?php endif; ?>
             </div>
-            <div class="col-8 d-flex justify-content-center align-items-center row">
+            <div class="col-lg-8 col-12 d-flex justify-content-center align-items-center row p-4 p-lg-0">
                 <div class="col-10 d-flex justify-content-center align-items-center">
                     <div class="custom-frame2 p-5 d-flex flex-column justify-content-center align-items-start text-start">
                         <div class="text-white">

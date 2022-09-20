@@ -5,7 +5,7 @@
 function amaco_scripts() {
 
 	//    <!-- Icons -->
-	wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css', array());
+	wp_enqueue_style( 'bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css', array());
 	wp_enqueue_style( 'main-font-face', get_stylesheet_directory_uri() . '/public/fonts/Iransans/fontface.css', array());
 	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/public/css/style.css', array());
 //    wp_style_add_data('style', 'rtl', 'replace');
@@ -187,7 +187,7 @@ function the_breadcrumb() {
 				echo $output;
 				echo '<strong title="'.$title.'"> '.$title.'</strong>';
 			} else {
-				echo '<li><strong> '.get_the_title().'</strong></li>';
+				echo '<li class="breadcrumb-item"><strong> '.get_the_title().'</strong></li>';
 			}
 		}
 	}
