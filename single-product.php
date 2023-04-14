@@ -1,7 +1,7 @@
 <?php /* Template Name: Product */
 get_header(); ?>
 
-    <section class="position-relative min-vh-50 d-flex justify-content-center align-items-center">
+    <section class="position-relative min-vh-50 d-flex justify-content-center align-items-center pt-5 pt-lg-0">
         <img class="position-absolute w-100 h-100 start-0 top-0 object-fit"
              src="<?php echo get_the_post_thumbnail_url() ?>"
              alt="<?php the_title(); ?>">
@@ -37,7 +37,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="container py-5">
+    <section class="container py-2 py-lg-5">
         <div class="row justify-content-around g-4">
             <div class="col-lg-6 col-12 fs-2 fw-bold text-dark-bg text-lg-start text-center">
                 <?php the_title(); ?>
@@ -56,14 +56,14 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="container py-5">
-        <div class="row justify-content-center g-4">
+    <section class="container py-2 pb-lg-5">
+        <div class="row justify-content-center g-1 g-lg-4">
             <?php
             if (have_rows('features')):
                 while (have_rows('features')): the_row(); ?>
                     <div class="col-lg-4 col-6 position-relative box">
                         <?php $front_box = get_sub_field('show_content'); ?>
-                        <div class="d-flex w-100 flex-column justify-content-center align-items-center text-center gap-2 rounded-1 p-5">
+                        <div class="d-flex w-100 flex-column justify-content-center align-items-center text-center gap-2 rounded-1 p-0 p-lg-5">
                             <div class="front-box position-relative lazy">
                                 <img width="60px" class="text-center pt-4 pb-2 lazy" src="<?= $front_box['icon'] ?>"
                                      alt="<?= $front_box['title'] ?>">

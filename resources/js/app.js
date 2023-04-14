@@ -70,11 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
         direction: 'horizontal',
         loop: true,
         spaceBetween: 30,
-        slidesPerView: "auto",
+        slidesPerView: 1.2,
         centeredSlides: true,
         roundLengths: false,
         grabCursor: true,
         disableOnInteraction: false,
+        breakpoints:{
+// when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            }
+        }
     });
 
 
