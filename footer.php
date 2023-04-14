@@ -94,20 +94,7 @@
         </div>
         <div class="col-6 d-flex justify-content-end">
             <ul class="list-group list-group-horizontal gap-3 list-unstyled bg-red text-white custom-header w-50 align-items-center px-4">
-                <?php
-                if (have_rows('social_list', 'option')):
-                    while (have_rows('social_list', 'option')) : the_row();
-                        $title = get_sub_field('title');
-                        $icon = get_sub_field('icon');
-                        $url = get_sub_field('link'); ?>
-                        <li>
-                            <a class="text-white" href="<?php echo esc_url($url); ?>">
-                                <i title="<?= $title; ?>" class="<?php echo $icon; ?>"></i>
-                            </a>
-                        </li>
-                    <?php endwhile;
-                endif;
-                ?>
+                <?php get_template_part('template-parts/social-list'); ?>
             </ul>
         </div>
     </div>

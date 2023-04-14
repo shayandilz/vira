@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="container z-top">
             <div class="row justify-content-start align-items-center text-white">
                 <div class="col-lg-8 col-12 text-start">
-                    <?php the_breadcrumb(); ?>
+                    <?php get_template_part('template-parts/product-breadcrumb'); ?>
                     <h1 class="fs-3 fw-bold">
                         <?php the_title(); ?>
                     </h1>

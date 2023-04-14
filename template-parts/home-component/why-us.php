@@ -1,7 +1,7 @@
 <section class="d-flex align-items-center position-relative">
     <div class="container px-lg-5">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-start">
+            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-start pb-5 pb-lg-0">
                 <?php $why_image = get_field('why_image'); ?>
                 <img class="img-fluid" src="<?= $why_image['url'] ?>" alt="<?= $why_image['alt'] ?>">
             </div>

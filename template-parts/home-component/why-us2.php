@@ -1,8 +1,8 @@
 <section class="d-flex"
          style="background-image: url('<?php the_field('why_image2'); ?>'); background-repeat: no-repeat;background-size: cover">
-    <div class="container">
+    <div class="container  px-lg-5">
         <div class="row">
-            <div class="col-lg-4 col-12 bg-white d-flex flex-column py-5 px-lg-5">
+            <div class="col-lg-4 col-12 bg-white py-5 overflow-hidden">
                 <span class="text-red position-relative line-before" data-aos="zoom-in-right" data-aos-delay="100">
                     <?php the_field('why_small_title2') ?>
                 </span>

@@ -11,12 +11,12 @@
                          class="swiper-slide d-flex align-items-center flex-column justify-content-center"
                          style="background-image: url('<?= $image_brand ?>'); background-repeat: no-repeat;background-size: cover">
                         <div class="container">
-                            <div class="row justify-content-center align-items-center text-center">
-                                <div class="col-8">
+                            <div class="row justify-content-center align-items-center text-center py-lg-0 py-5">
+                                <div class="col-lg-8 col-10">
                                         <span class="text-red">
                                             <?php the_sub_field('small_title'); ?>
                                         </span>
-                                    <h1 class="text-white">
+                                    <h1 class="text-white fs-1">
                                         <?php the_sub_field('title'); ?>
                                     </h1>
                                     <div class="text-semi-light">
@@ -36,7 +36,7 @@
     </div>
     <div class="container hero-bottom-slider z-top">
         <div class="row justify-content-center align-items-center">
-            <div class="col-lg-8 col-12 d-flex">
+            <div class="col-lg-8 col-12 d-md-flex d-block">
                 <?php
                 $i = 0;
                 if (have_rows('slider_box')):

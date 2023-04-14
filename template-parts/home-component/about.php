@@ -3,8 +3,8 @@
         <?php get_template_part('template-parts/effect-svg/vector1'); ?>
     </div>
     <div class="container py-5 py-lg-0 px-lg-5 z-top">
-        <div class="row">
-            <div class="col-lg-6 col-12">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 col-12 pt-lg-0 pt-3">
                     <span class="text-red line-before position-relative" data-aos="zoom-in-right" data-aos-delay="100">
                         <?php the_field('about_small_title') ?>
                     </span>
@@ -49,7 +49,7 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-lg-end justify-content-center row mt-5 mt-lg-0 position-relative">
+            <div class="col-lg-6 col-12 d-flex align-items-center justify-content-lg-end justify-content-center pb-5 pb-lg-0 row mt-5 mt-lg-0 position-relative">
                 <div class="col-lg-7 col-12 position-relative">
                     <?php $about_image = get_field('about_image'); ?>
                     <div class="ratio ratio-1x1 custom-frame z-top" data-aos="zoom-in" data-aos-delay="300" style="height: 450px;">

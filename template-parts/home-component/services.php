@@ -15,12 +15,12 @@
             <?php foreach ($services as $post):
                 setup_postdata($post); $i++; ?>
                 <div class="col-lg-4 col-6 z-top">
-                    <div class="bg-white shadow-lg p-5 text-lg-start text-center" data-aos="zoom-in" data-aos-delay="<?= $i; ?>00">
+                    <div class="bg-white shadow-lg p-lg-5 p-3 text-lg-start text-center" data-aos="zoom-in" data-aos-delay="<?= $i; ?>00">
                         <div class="pb-4">
                             <?php $image_service = get_field('service_icon'); ?>
                             <img src="<?= $image_service['url']; ?>" alt="<?= $image_service['alt']; ?>">
                         </div>
-                        <h6 class="lh-base">
+                        <h6 class="lh-base fs-6">
                             <?php the_title(); ?>
                         </h6>
                     </div>

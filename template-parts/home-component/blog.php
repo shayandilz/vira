@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="container">
     <div class="row py-4 px-lg-5 justify-content-center">
             <span class="text-red pb-2 position-relative line-before" data-aos="zoom-in-right" data-aos-delay="100">
                 <?php the_field('blog_title') ?>

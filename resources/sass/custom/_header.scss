@@ -20,10 +20,12 @@ header {
     background: white;
     top: 34px;
     box-shadow: 0px 1px 2px 0px #22222226;
-    nav:first-child{
-      padding: 5px 2px!important;
-      > div:last-child{
-        opacity: 0;
+    @include media-breakpoint-up(md){
+      nav:first-child{
+        padding: 5px 2px!important;
+        > div:last-child{
+          opacity: 0;
+        }
       }
     }
     > div {

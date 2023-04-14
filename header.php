@@ -17,26 +17,18 @@
 <section class="bg-dark-bg topbar w-100 position-fixed lazy">
     <div class="container-fluid">
         <div class="row align-items-center justify-content-between">
-            <div class="col-6 d-flex gap-2">
+            <div class="col-lg-6 col d-flex gap-2">
                 <div class="text-white link-hover">
                     Fa
                 </div>
                 <a href="#" class="border-start text-white text-decoration-none ps-3 link-hover lazy">
-                    سامانه ارتباط با مشتریان
+                    ارتباط با ما
                     <i class="bi bi-chevron-left"></i>
                 </a>
             </div>
-            <div class="col-6 d-flex justify-content-end">
+            <div class="col-lg-6 col d-flex justify-content-end">
                 <ul class="list-group list-group-horizontal gap-3  list-unstyled">
-                    <li>
-                        <?php get_template_part( 'template-parts/social-svg/instagram' ); ?>
-                    </li>
-                    <li>
-                        <?php get_template_part( 'template-parts/social-svg/instagram' ); ?>
-                    </li>
-                    <li>
-                        <?php get_template_part( 'template-parts/social-svg/instagram' ); ?>
-                    </li>
+                    <?php get_template_part('template-parts/social-list'); ?>
                 </ul>
             </div>
         </div>
@@ -69,7 +61,7 @@
             </a>
             <div class="collapse navbar-collapse justify-content-end mt-4 mt-lg-0" id="navbarNav">
                 <div class="d-flex align-items-center gap-2">
-                    <?php get_template_part( 'template-parts/contact-svg/phone' ); ?>
+                    <?php get_template_part('template-parts/contact-svg/phone'); ?>
                     <div class="d-flex flex-column">
                         <span>
                             تماس
@@ -82,13 +74,13 @@
                 <div class="d-block d-lg-none">
                     <?php
                     wp_nav_menu(array(
-                            'theme_location' => 'headerMenuLocation',
-                            'menu_class' => 'navbar-nav pe-0',
-                            'container' => false,
-                            'menu_id' => 'navbarTogglerMenu',
-                            'item_class' => 'nav-item',
-                            'link_class' => 'nav-link text-white',
-                            'depth' => 2,
+                        'theme_location' => 'headerMenuLocation',
+                        'menu_class' => 'navbar-nav pe-0',
+                        'container' => false,
+                        'menu_id' => 'navbarTogglerMenu',
+                        'item_class' => 'nav-item',
+                        'link_class' => 'nav-link text-white',
+                        'depth' => 2,
                     ));
                     ?>
                 </div>
@@ -98,13 +90,13 @@
             <div class="bg-red custom-header">
                 <?php
                 wp_nav_menu(array(
-                        'theme_location' => 'headerMenuLocation',
-                        'menu_class' => 'navbar-nav gap-4 flex-row p-2',
-                        'container' => false,
-                        'menu_id' => 'navbarTogglerMenu',
-                        'item_class' => 'nav-item',
-                        'link_class' => 'nav-link text-white',
-                        'depth' => 2,
+                    'theme_location' => 'headerMenuLocation',
+                    'menu_class' => 'navbar-nav gap-4 flex-row p-2',
+                    'container' => false,
+                    'menu_id' => 'navbarTogglerMenu',
+                    'item_class' => 'nav-item',
+                    'link_class' => 'nav-link text-white',
+                    'depth' => 2,
                 ));
                 ?>
             </div>
