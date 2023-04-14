@@ -156,7 +156,7 @@ function wpd_get_menu_item( $field, $object_id, $items ) {
 //	}
 //	return $found_posts;
 //}
-
+require get_template_directory() . '/inc/comments.php';
 
 function the_breadcrumb() {
 	global $post;

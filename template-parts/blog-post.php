@@ -27,7 +27,7 @@
     echo $excerpt . '...';
     ?>
     <a class="small fw-lighter d-flex align-items-center gap-3 stretched-link pt-3" href="<?php the_permalink(); ?>">
-        این مقاله را بخوانید
+        ادامه مطلب
         <?php get_template_part('template-parts/SVG/arrow-icon'); ?>
     </a>
 </div>

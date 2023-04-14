@@ -21,10 +21,10 @@
                 <div class="d-flex flex-column gap-4">
                     <?php
                     $args = array(
-                            'post_type' => 'post',
-                            'post_status' => 'publish',
-                            'posts_per_page' => '2',
-                            'ignore_sticky_posts' => true
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'posts_per_page' => '2',
+                        'ignore_sticky_posts' => true
                     );
                     $loop = new WP_Query($args);
                     if ($loop->have_posts()) : $i = 0;
@@ -73,12 +73,12 @@
                 </h6>
                 <?php
                 wp_nav_menu(array(
-                        'theme_location' => 'footerLocationOne',
-                        'menu_class' => 'list-unstyled pe-0 small fw-lighter text-semi-light d-flex flex-column gap-3',
-                        'container' => false,
-                        'item_class' => 'nav-item',
-                        'link_class' => 'text-semi-light lazy text-decoration-none',
-                        'depth' => 1,
+                    'theme_location' => 'footerLocationOne',
+                    'menu_class' => 'list-unstyled pe-0 small fw-lighter text-semi-light d-flex flex-column gap-3',
+                    'container' => false,
+                    'item_class' => 'nav-item',
+                    'link_class' => 'text-semi-light lazy text-decoration-none',
+                    'depth' => 1,
                 ));
                 ?>
             </div>
@@ -94,15 +94,20 @@
         </div>
         <div class="col-6 d-flex justify-content-end">
             <ul class="list-group list-group-horizontal gap-3 list-unstyled bg-red text-white custom-header w-50 align-items-center px-4">
-                <li>
-                    <?php get_template_part('template-parts/social-svg/instagram'); ?>
-                </li>
-                <li>
-                    <?php get_template_part('template-parts/social-svg/instagram'); ?>
-                </li>
-                <li>
-                    <?php get_template_part('template-parts/social-svg/instagram'); ?>
-                </li>
+                <?php
+                if (have_rows('social_list', 'option')):
+                    while (have_rows('social_list', 'option')) : the_row();
+                        $title = get_sub_field('title');
+                        $icon = get_sub_field('icon');
+                        $url = get_sub_field('link'); ?>
+                        <li>
+                            <a class="text-white" href="<?php echo esc_url($url); ?>">
+                                <i title="<?= $title; ?>" class="<?php echo $icon; ?>"></i>
+                            </a>
+                        </li>
+                    <?php endwhile;
+                endif;
+                ?>
             </ul>
         </div>
     </div>
@@ -116,12 +121,12 @@
             <div class="col-lg-6 col-12">
                 <?php
                 wp_nav_menu(array(
-                        'theme_location' => 'footerLocationTwo',
-                        'menu_class' => 'list-unstyled text-center text-lg-start pe-0 small fw-lighter text-white d-flex flex-row gap-3 justify-content-lg-end justify-content-center',
-                        'container' => false,
-                        'item_class' => 'nav-item',
-                        'link_class' => 'text-semi-light lazy text-decoration-none',
-                        'depth' => 1,
+                    'theme_location' => 'footerLocationTwo',
+                    'menu_class' => 'list-unstyled text-center text-lg-start pe-0 small fw-lighter text-white d-flex flex-row gap-3 justify-content-lg-end justify-content-center',
+                    'container' => false,
+                    'item_class' => 'nav-item',
+                    'link_class' => 'text-semi-light lazy text-decoration-none',
+                    'depth' => 1,
                 ));
                 ?>
             </div>

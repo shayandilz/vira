@@ -2,26 +2,29 @@
 get_header();
 /* Template Name: Archive */
 ?>
-    <section class="position-relative min-vh-50 d-flex justify-content-center align-items-center">
-        <img class="position-absolute w-100 h-100 start-0 top-0 object-fit"
-             src="<?php echo get_field('blog_archive', 'option')['url'] ?>"
-             alt="<?php the_title(); ?>">
-        <div class="container z-top">
-            <div class="row justify-content-start align-items-center text-white">
-                <div class="col-8 text-start">
-                    <?php the_breadcrumb(); ?>
-                    <h1 class="fs-3 fw-bold">
-                        مقالات
-                    </h1>
-                </div>
+<section class="position-relative min-vh-50 d-flex justify-content-center align-items-center">
+    <img class="position-absolute w-100 h-100 start-0 top-0 object-fit"
+         src="<?php echo get_field('blog_archive', 'option')['url'] ?>"
+         alt="<?php the_title(); ?>">
+    <div class="container z-top">
+        <div class="row justify-content-start align-items-center text-white">
+            <div class="col-8 text-start">
+                <?php the_breadcrumb(); ?>
+                <h1 class="fs-3 fw-bold">
+                    <?php the_title(); ?>
+                </h1>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section class="py-5">
         <div class="container pb-5">
             <?php
             if (have_posts()) :
             ?>
+            <div class="text-center">
+                <p class="h2"> مقالات</p>
+            </div>
             <div class="row g-4">
                 <?php
                 /* Start the Loop */
