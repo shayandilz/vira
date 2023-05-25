@@ -31,8 +31,12 @@
             <?php endif; ?>
         </div>
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-prev position-absolute top-50 end-0 fs-4 text-white z-top">
+            <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="swiper-next position-absolute top-50 start-0 fs-4 text-white z-top">
+            <i class="bi bi-chevron-right"></i>
+        </div>
     </div>
     <div class="container hero-bottom-slider z-top">
         <div class="row justify-content-center align-items-center">

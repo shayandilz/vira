@@ -100,11 +100,7 @@
     </div>
     <div class="container-fluid px-5">
         <div class="row pt-4 align-content-between justify-content-center flex-lg-row flex-column-reverse">
-            <div class="col-lg-6 col-12 text-center text-lg-start">
-                <span class="small">
-                    © 2020 طراحی شده توسط یوسف و شایان
-                </span>
-            </div>
+
             <div class="col-lg-6 col-12">
                 <?php
                 wp_nav_menu(array(

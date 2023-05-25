@@ -1,5 +1,5 @@
 <section class="container-fluid py-5 position-relative">
-    <div class="position-absolute w-auto end-0 top-0 mt-2 z-below" data-aos="slide-left" data-aos-delay="100">
+    <div class="position-absolute w-auto end-0 top-0 mt-2 z-below d-none d-lg-block" data-aos="slide-left" data-aos-delay="100">
         <?php get_template_part('template-parts/effect-svg/vector2'); ?>
     </div>
     <p class="text-red text-center" data-aos="fade-up" data-aos-delay="100">
